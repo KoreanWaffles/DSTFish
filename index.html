@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 12px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .label {
+      margin-top: 10px;
+      text-align: center;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+    }
+
+    /* Hide actual checkbox */
+    .card input {
+      display: none;
+    }
+
+    .card.checked {
+      outline: 3px solid #4CAF50;
+      background: #f0fff4;
+    }
+  </style>
+</head>
+<body>
+
+<h1>DST Fishes</h1>
+
+<div class="grid">
+
+<div class="card">
+    <img src="./images/Runty_Guppy.png" alt="Runty Guppy">
+    <div class="checkbox">
+        <input type="checkbox" id="Runty_Guppy">
+        <label for="Runty_Guppy">Runty Guppy</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Needlenosed_Squirt.png" alt="Needlenosed Squirt">
+    <div class="checkbox">
+        <input type="checkbox" id="Needlenosed_Squirt">
+        <label for="Needlenosed_Squirt">Needlenosed Squirt</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Bitty_Baitfish.png" alt="Bitty Baitfish">
+    <div class="checkbox">
+        <input type="checkbox" id="Bitty_Baitfish">
+        <label for="Bitty_Baitfish">Bitty Baitfish</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Smolt_Fry.png" alt="Smolt Fry">
+    <div class="checkbox">
+        <input type="checkbox" id="Smolt_Fry">
+        <label for="Smolt_Fry">Smolt Fry</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Popperfish.png" alt="Popperfish">
+    <div class="checkbox">
+        <input type="checkbox" id="Popperfish">
+        <label for="Popperfish">Popperfish</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Fallounder.png" alt="Fallounder">
+    <div class="checkbox">
+        <input type="checkbox" id="Fallounder">
+        <label for="Fallounder">Fallounder</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Bloomfin_Tuna.png" alt="Bloomfin Tuna">
+    <div class="checkbox">
+        <input type="checkbox" id="Bloomfin_Tuna">
+        <label for="Bloomfin_Tuna">Bloomfin Tuna</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Scorching_Sunfish.png" alt="Scorching Sunfish">
+    <div class="checkbox">
+        <input type="checkbox" id="Scorching_Sunfish">
+        <label for="Scorching_Sunfish">Scorching Sunfish</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Spittlefish.png" alt="Spittlefish">
+    <div class="checkbox">
+        <input type="checkbox" id="Spittlefish">
+        <label for="Spittlefish">Spittlefish</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Mudfish.png" alt="Mudfish">
+    <div class="checkbox">
+        <input type="checkbox" id="Mudfish">
+        <label for="Mudfish">Mudfish</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Deep_Bass.png" alt="Deep Bass">
+    <div class="checkbox">
+        <input type="checkbox" id="Deep_Bass">
+        <label for="Deep_Bass">Deep Bass</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Dandy_Lionfish.png" alt="Dandy Lionfish">
+    <div class="checkbox">
+        <input type="checkbox" id="Dandy_Lionfish">
+        <label for="Dandy_Lionfish">Dandy Lionfish</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Black_Catfish.png" alt="Black Catfish">
+    <div class="checkbox">
+        <input type="checkbox" id="Black_Catfish">
+        <label for="Black_Catfish">Black Catfish</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Corn_Cod.png" alt="Corn Cod">
+    <div class="checkbox">
+        <input type="checkbox" id="Corn_Cod">
+        <label for="Corn_Cod">Corn Cod</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Ice_Bream.png" alt="Ice Bream">
+    <div class="checkbox">
+        <input type="checkbox" id="Ice_Bream">
+        <label for="Ice_Bream">Ice Bream</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Sweetish_Fish.png" alt="Sweetish Fish">
+    <div class="checkbox">
+        <input type="checkbox" id="Sweetish_Fish">
+        <label for="Sweetish_Fish">Sweetish Fish</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Freshwater_Fish.png" alt="Freshwater Fish">
+    <div class="checkbox">
+        <input type="checkbox" id="Freshwater_Fish">
+        <label for="Freshwater_Fish">Freshwater Fish</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Live_Eel.png" alt="Live Eel">
+    <div class="checkbox">
+        <input type="checkbox" id="Live_Eel">
+        <label for="Live_Eel">Live Eel</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Wobster.png" alt="Wobster">
+    <div class="checkbox">
+        <input type="checkbox" id="Wobster">
+        <label for="Wobster">Wobster</label>
+    </div>
+</div>
+
+<div class="card">
+    <img src="./images/Lunar_Wobster.png" alt="Lunar Wobster">
+    <div class="checkbox">
+        <input type="checkbox" id="Lunar_Wobster">
+        <label for="Lunar_Wobster">Lunar Wobster</label>
+    </div>
+</div>
+</div>
+
+<script>
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    const checkbox = card.querySelector('input');
+
+    // Load saved state
+    const saved = localStorage.getItem(checkbox.id);
+    if (saved === "true") {
+      checkbox.checked = true;
+      card.classList.add('checked');
+    }
+
+    card.addEventListener('click', () => {
+      checkbox.checked = !checkbox.checked;
+      card.classList.toggle('checked', checkbox.checked);
+      localStorage.setItem(checkbox.id, checkbox.checked);
+    });
+  });
+</script>
+
+</body>
+</html>
